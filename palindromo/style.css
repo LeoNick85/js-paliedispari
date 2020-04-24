@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: red;
+    height: 100px;
+}
+
+#request {
+    background-color: azure;
+    height: 100px;
+}
+
+#result {
+    background-color: purple;
+    height: 100px;
+}
