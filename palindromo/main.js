@@ -10,8 +10,6 @@ function isEven(parola) {
     }
 }
 
-console.log(isEven("ciao"));
-
 //Creo una funzione per verificare se una parola è palindroma, trasformando la parola in array e confrontando le lettere
 function isPalindromo (parola) {
     //trasformo la parola in array
