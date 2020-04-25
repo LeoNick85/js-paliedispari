@@ -11,7 +11,7 @@ function isEven(parola) {
 }
 
 //Creo una funzione per verificare se una parola è palindroma, trasformando la parola in array e confrontando le lettere
-function isPalindromo (parola) {
+function isPalindromo(parola) {
     //trasformo la parola in array
     var lettere = parola.split("");
     console.log(lettere);
@@ -20,7 +20,7 @@ function isPalindromo (parola) {
     if (isEven(parola)) {
         var controllo = parola.length / 2;
     } else {
-        var controllo = (parola.lenght / 2) - 1;
+        var controllo = ((parola.length - 1) / 2);
     }
     console.log(controllo);
 
@@ -37,10 +37,14 @@ function isPalindromo (parola) {
     return final_value;
 }
 
-var prova = isPalindromo(prompt("inserisci una parola:"));
-
-console.log(prova);
-
 //Chiedo all'utente la parola che vuole verificare e la stampo in html
+var user_choice = (prompt("inserisci una parola:"));
+console.log(user_choice);
+document.getElementById("user-choice").insertAdjacentHTML("afterEnd", "<p>" + user_choice + "</p>");
 
 //Verifico se la parola dell'utente è palindroma e stampo la risposta in HTML
+if (isPalindromo(user_choice)) {
+    document.getElementById("result").insertAdjacentHTML("beforeEnd", "<p>Parola Palindroma!</p>");
+} else {
+    document.getElementById("result").insertAdjacentHTML("beforeEnd", "<p>Parola NON Palindroma!</p>");
+}

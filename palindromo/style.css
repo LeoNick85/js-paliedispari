@@ -2,19 +2,53 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Righteous', cursive;
 }
 
 header {
-    background-color: red;
-    height: 100px;
+    background-color: #ff8080;
+    padding: 50px;
+    text-align: center;
+    border-bottom: 4px inset red;
+    height: 170px;
+}
+
+header h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    text-decoration: overline underline;
+}
+
+main {
+    height: calc(100vh - 170px);
+    background-color: #b3ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #request {
-    background-color: azure;
-    height: 100px;
+    background-color: #ffff66;
+    height: 300px;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid #3399ff;
+    border-radius: 9px;
+}
+
+#request p {
+    font-size: 34px;
 }
 
 #result {
-    background-color: purple;
-    height: 100px;
+    background-color: #8585ad;
+    width: 65%;
+    text-align: center;
+    padding: 30px;
+    border: 5px solid black;
+    border-radius: 9px;
 }
