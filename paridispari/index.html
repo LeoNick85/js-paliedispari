@@ -2,10 +2,45 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Paprika&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Esercitazione #22-2 - Pari/Dispari</title>
     </head>
     <body>
+        <header>
+            <h1>disPARI</h1>
+        </header>
+        <main>
+            <div id="choice_wrapper">
+                <div class="text-wrapper">
+                    <p id="user-odd">Hai scommeso che il numero sarà: </p>
+                </div>
+                <div class="clearfix">
+                    <div class="column">
+                        <div class="column-up">
+                            <p>La tua scelta</p>
+                        </div>
+                        <div class="number-wrapper">
+                            <p id="user-choice"></p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="column-up">
+                            <p>La scelta dell'IA</p>
+                        </div>
+                        <div class="number-wrapper">
+                            <p id="ia-choice"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <p id="sum">La somma dei due numeri è: </p>
+                    <div id="final-result">
+
+                    </div>
+                </div>
+            </div>
+        </main>
         <script src="main.js" charset="utf-8"></script>
     </body>
 </html>
